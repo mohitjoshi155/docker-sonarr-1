@@ -15,7 +15,7 @@ RUN chown -R nobody:users /opt/NzbDrone \
   ; mkdir -p /volumes/config/sonarr /volumes/completed /volumes/media \
   && chown -R nobody:users /volumes
 
-EXPOSE 8989
+EXPOSE $PORT
 EXPOSE 9898
 VOLUME /volumes/config
 VOLUME /volumes/completed
